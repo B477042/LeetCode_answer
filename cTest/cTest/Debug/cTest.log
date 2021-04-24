@@ -1,0 +1,5 @@
+﻿  Solution.cpp
+c:\users\eett9\source\repos\ctest\ctest\solution.cpp(18): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\eett9\source\repos\ctest\ctest\solution.cpp(64): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\eett9\source\repos\ctest\ctest\solution.cpp(68): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  cTest.vcxproj -> C:\Users\eett9\source\repos\cTest\Debug\cTest.exe
