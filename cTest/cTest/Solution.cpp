@@ -105,5 +105,63 @@ vector<int> Solution::twoSum(vector<int>& nums, int target)
 {
 	vector<int>answer;
 
-	return answer);
+	for (int i = 0; i < nums.size(); ++i)
+	{
+		int half = target - nums[i];
+
+		auto it = find(nums.begin() + i+1, nums.end(), half);
+		
+		if (it != nums.end())
+		{
+			int temp = it - nums.begin();
+			
+			answer.push_back(i);
+			answer.push_back(temp);
+			break;
+
+		}
+
+
+	}
+
+	for (auto it : answer)
+		cout << it << "\t";
+	cout << endl;
+	
+
+	return answer;
+}
+
+int Solution::singleNumber(vector<int>& nums)
+{
+	sort(nums.begin(), nums.end());
+
+	for (int i = 0; i < nums.size(); ++i)
+	{
+		if (i == nums.size() - 1)
+			return nums[i];
+
+		if (nums[i] == nums[i + 1])
+		{
+			++i;
+			continue;
+		}
+		else
+			return nums[i];
+	}
+
+
+	return 0;
+}
+
+int Solution::myAtoi(string s)
+{
+	int l_word = 0;
+	int 
+
+
+
+
+
+	return 0;
 }
