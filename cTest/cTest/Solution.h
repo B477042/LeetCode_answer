@@ -3,6 +3,7 @@
 #include<vector>
 #include<string>
 #include<algorithm>
+#include<queue>
 
 using namespace std;
 
@@ -15,6 +16,7 @@ public:
 	vector<int> twoSum(vector<int>& nums, int target);
 	int singleNumber(vector<int>& nums);
 	int myAtoi(string s);
-
+	void reverseString(vector<char>& s);
+	bool bIsLetter(const char&input,bool bIsFirst);
 };
 

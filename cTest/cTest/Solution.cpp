@@ -156,12 +156,81 @@ int Solution::singleNumber(vector<int>& nums)
 
 int Solution::myAtoi(string s)
 {
-	int l_word = 0;
-	int 
+
+	/*Test Case
+		.42		======>		0(return fail)
+		+56	==========> 56
+		4551158.2 =========> 4551158
+		21341sf12	==========> 21341
+	*/
+	int answer = 0;
+	//if true *-1
+	bool bIsMinor = false;
+	
+	bool bFindFirstNum = false;
+
+	queue<int> q_Nums;
+
+	char firsLetter = s[0];
+	//Read First Letter, if Letter return 0
+	if (bIsLetter(firsLetter,true))
+		return 0;
+
+	
+
+
+		//only 0~9, +, -
+	
+		
+	
 
 
 
 
+	return 1;
+}
 
-	return 0;
+void Solution::reverseString(vector<char>& s)
+{
+	vector<char> Answer=s;
+	int strlen = s.size();
+	int idx_last = s.size() - 1;
+	for (int i = idx_last; i >=0; --i)
+		s[idx_last - i] = Answer[i];
+
+}
+
+bool Solution::bIsLetter(const char & input,bool bIsFirst)
+{
+	//첫번째 글자 탐색인지 검사
+	switch (bIsFirst)
+	{
+		//첫번째 글자 탐색이라면
+	case true:
+		if ('a' <= input && input <= 'z')
+			return true;
+		else if ('A' <= input || input <= 'Z')
+			return true;
+		
+		else if (input == '.' || input == '.')
+			return true;
+
+
+		//그 이후 탐색이라면
+	case false:
+		if ('a' <= input && input <= 'z')
+			return true;
+		else if ('A' <= input || input <= 'Z')
+			return true;
+
+		else if (input == '.' || input == '.'||input=='+'||input=='-')
+			return true;
+
+
+	}
+
+	
+	
+
+	return false;
 }
